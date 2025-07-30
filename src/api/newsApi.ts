@@ -4,13 +4,11 @@ import axios from 'axios';
 const BASE_URL = 'http://54.180.91.132:8080';
 
 export interface NewsItem {
-  id: number;
+  id: string;
   title: string;
-  summary: string;
   representativeImageUrl: string;
-  keywords: string;
+  keywords: string | string[]; // ✅ 이렇게 명시해야 .map 사용 가능
 }
-
 export const fetchLatestNews = async (): Promise<NewsItem[]> => {
   try {
     const response = await axios.get('/api/news/latest');
