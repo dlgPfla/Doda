@@ -16,38 +16,9 @@ const password = location.state?.password;
   const [district, setDistrict] = useState('');
   const [job, setJob] = useState('');
 
-  const handleNext = async () => {
-  try {
-    const response = await fetch('https://winnerteam.store/api/users/signup', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        phone,
-        password,
-        name,
-        age,
-        province,
-        district,
-        job,
-      }),
-    });
-
-    const result = await response.json();
-
- if (!response.ok && result.message.includes('이미 가입된')) {
-  // 👉 로그인 시도
-}
-
-    localStorage.setItem('token', result.token);
-    localStorage.setItem('user', JSON.stringify(result));
-    navigate('/onboarding4'); // 다음 화면
-  } catch (error: any) {
-    alert(`❌ 네트워크 오류: ${error.message}`);
-  }
+ const handleNext = () => {
+  navigate('/onboarding4');
 };
-
   return (
     <PageContainer>
       <div className={styles.container}>

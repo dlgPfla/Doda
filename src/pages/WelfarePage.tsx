@@ -15,7 +15,7 @@ const WelfarePage: React.FC = () => {
   useEffect(() => {
   const fetchData = async () => {
     try {
-      const res = await fetch('https://winnerteam.store/api/welfare/generate');
+      const res = await fetch('https://winnerteam.store/api/welfare');
       const data = await res.json();
       console.log('📦 받은 복지 데이터:', data);
       const list = Array.isArray(data) ? data : data.welfares;
