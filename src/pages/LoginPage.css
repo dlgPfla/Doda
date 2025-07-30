@@ -34,18 +34,13 @@ letter-spacing: -0.252px;
   letter-spacing: -0.421px;
   margin-top: -24px;
 }
-.logo-image1 {
-  width: 140px; /* 원하시는 사이즈에 맞게 조정 가능 */
-  
-  display: flex;
-  justify-content: center;
-}
 
-.logo-image img {
-  width: 80%;
+.logo-image1 img {
+  width: 100%;
+  
   height: auto;
   margin-top: -40px;
-  margin-left: 34px;
+  margin-left: 4px;
   
   object-fit: contain;
   justify-content: center;
