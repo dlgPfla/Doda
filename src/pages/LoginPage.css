@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 20px;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.title-box {
+  align-self: flex-start;
+  margin-bottom: 24px;
+  margin-top: 36px;
+}
+
+.subtitle {
+color: #939393;
+font-family: Pretendard;
+font-size: 25.249px;
+font-style: normal;
+font-weight: 550;
+line-height: 130%; /* 32.824px */
+letter-spacing: -0.252px;
+}
+
+.container .title {
+  color: #000000;
+  font-family: Pretendard;
+  font-size: 42.098px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 140%;
+  letter-spacing: -0.421px;
+  margin-top: -24px;
+}
+.circle {
+  background-color: #ddd;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 52px;
+  
+}
+
+.circle-text {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.voice-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  margin-bottom: 32px;
+  margin-right: -164px;
+}
+
+.voice-guide {
+  position: relative;
+  background-color: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+  max-width: 240px;
+  margin-bottom: 8px;
+}
+
+.voice-guide b {
+  color: #3385ff;
+}
+
+.voice-guide::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #f0f0f0;
+}
+
+.voice-button,
+.voice-box button {
+width: 70px;
+height: 70px;
+flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #3399ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.voice-button img {
+  width: 46px;
+  height: 46px;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.login-button {
+  background-color: #3399ff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.signup-button {
+  background-color: #666;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 14px;
+}
+.voice-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+}

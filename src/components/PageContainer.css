@@ -1,0 +1,21 @@
+/* src/components/PageContainer.css */
+.page-container {
+  width: 393px;
+  height: 852px;
+  margin: 0 auto; /* 화면 중앙 */
+  background-color: white;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.status-bar {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 200;
+}

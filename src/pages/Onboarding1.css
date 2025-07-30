@@ -1,0 +1,116 @@
+.onboarding1-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.circle-logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.onboarding1-title {
+color: #000;
+font-family: Pretendard;
+font-size: 31.473px;
+font-style: normal;
+font-weight: 800;
+line-height: 140%; /* 44.063px */
+letter-spacing: -0.315px;
+margin-top: 5px;
+margin-bottom: 105px;
+}
+
+.onboarding1-input {
+  width: 100%;
+  height: 44px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 28px 22px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.find-password-box {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: 6px;
+  gap: 10px;
+}
+
+.gray-text {
+  color: #7D7D7D;
+font-family: Pretendard;
+font-size: 14.672px;
+font-style: normal;
+font-weight: 500
+}
+
+.find-password-button {
+  padding: 14px 36px;
+  background-color: #3399ff;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.voice-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -274px;
+  
+}
+
+.onboarding1-next {
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  background-color: #dbe8ff;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  cursor: not-allowed;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+
+.onboarding1-next.active {
+  background-color: #3399ff;
+  cursor: pointer;
+}

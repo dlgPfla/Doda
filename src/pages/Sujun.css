@@ -1,0 +1,154 @@
+/* ✅ 전체 스크롤이 가능하도록 설정 (상단바 제외) */
+.level-container {
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-sizing: border-box;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  margin-top: 24px;
+  margin-bottom: 304px;
+}
+.level-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* ✅ 고정 아님 → 위치 문제 해결 */
+.level-caption {
+  color: #939393;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: -20px;
+  margin-top: 12px;
+}
+
+.level-title {
+  color: #000;
+  font-size: 31px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 32px;
+  
+}
+
+/* ✅ 버튼 고정 제거 → 자연스럽게 아래로 흐르도록 */
+.level-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.level-button {
+  padding: 12px 16px;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.level-button.active {
+  background-color: #318cff;
+  color: white;
+}
+
+/* ✅ 설명 및 말풍선 */
+.level-description {
+  margin-top: 20px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.description-text {
+  font-size: 15px;
+  color: #000;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.check-all-button {
+  padding: 8px 16px;
+  border: 1.5px solid #318cff;
+  color: #318cff;
+  background: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* ✅ 전체 설명 말풍선 - 내부 스크롤 ❌ 전체 페이지 스크롤 ⭕ */
+.speech-bubble {
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  animation: fadeIn 0.3s ease-in-out;
+  width: 312px;
+  /* ✅ 내부 스크롤 제거 */
+  max-height: none;
+  overflow: visible;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  width: 16px;
+  height: 16px;
+  background-color: #f0f0f0;
+  transform: rotate(45deg);
+  z-index: 0;
+}
+
+.full-description {
+  font-size: 15px;
+  color: #000;
+  line-height: 1.5;
+  white-space: pre-line;
+  margin-bottom: 24px;
+}
+.voice-button-wrapper1 {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 172px;
+  margin-left: 265px;
+  position: fixed;
+}
+
+.level-next-button {
+
+  width: 342px;
+  height: 52px;
+  background-color: #d6e4ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  position: fixed;
+}
+
+.bottom-fixed-row {
+  position: absolute;
+  bottom: 74px;
+  left: 50%;
+  transform: translateX(-50%); /* 중앙 정렬 */
+  width: 312px;
+  max-width: 390px; /* ✅ 앱 화면 기준 너비 제한 */
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: white;
+  z-index: 10;
+}
+

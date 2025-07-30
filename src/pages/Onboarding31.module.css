@@ -1,0 +1,190 @@
+.container {
+  width: 393px;
+  height: 752px;
+  margin-top: 64px;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: 'Pretendard', sans-serif;
+  position: relative;
+}
+
+.progressBar {
+  display: flex;
+  gap: 8px;
+  
+  margin-bottom: 24px;
+  justify-content: flex-start;
+}
+
+.step {
+  width: 78px;
+  height: 4px;
+  border-radius: 7px;
+  background: #EDEDED;
+}
+
+.active {
+  background-color: #318cff;
+}
+
+.caption {
+color: #939393;
+
+font-family: Pretendard;
+font-size: 15.326px;
+font-style: normal;
+font-weight: 700;
+}
+
+.title {
+color: #000;
+font-family: Pretendard;
+font-size: 31.473px;
+font-style: normal;
+font-weight: 800;
+line-height: 140%; /* 44.063px */
+letter-spacing: -0.315px;
+margin-top: -14px;
+}
+
+.profileImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.profileImage {
+  width: 120px;
+  height: 120px;
+}
+
+.cameraIcon {
+  position: absolute;
+  bottom: 0;
+  right: 30%;
+  background-color: white;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.inputGroup input,
+.inputGroup select {
+border-radius: 9px;
+background: #EDEDED;
+border: none;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 164px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.inputGroup1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.inputGroup2 input,
+.inputGroup2 select {
+border-radius: 9px;
+background: #EDEDED;
+border: none;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 164px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.inputGroup2 label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.inputGroup1 select {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='black' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center; /* 기존보다 왼쪽으로 */
+  appearance: none;
+}
+
+.ageInputWrapper input {
+  background-color: #EDEDED;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.ageInputWrapper {
+  position: relative;
+}
+
+.ageInputWrapper span {
+  position: absolute;
+  right: 14px;
+  top: 40%;
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 14px;
+}
+.fullWidth {
+  width: 343px;
+}
+
+.smallHint {
+  font-size: 12px;
+  color: #999;
+  margin: 4px 0 8px;
+}
+
+.dotIcon {
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  margin-bottom: 1px; /* 약간 위로 올리기 */
+}
+
+.voiceButtonWrapper {
+      background-Color: '#318cff';
+      width: '70px';
+      height: '70px';
+      border-radius: '50%';
+      display: 'flex';
+      justify-content: 'center';
+      align-items: 'center';
+      margin-left: 275px;
+      margin-bottom: -22px;
+      margin-top: -58px;
+}
+
+.nextButton {
+  margin-top: 45px;
+  width: 100%;
+  background-color: #d6e4ff;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 12px;
+  font-weight: 600;
+}

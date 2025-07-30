@@ -1,0 +1,139 @@
+.onboarding5-container {
+  width: 393px;
+  height: 752px;
+  margin-top: 64px;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: 'Pretendard', sans-serif;
+  position: relative;
+}
+
+.progress-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 84px;
+  justify-content: flex-start;
+}
+
+.step {
+  width: 78px;
+  height: 4px;
+  border-radius: 7px;
+  background: #EDEDED;
+}
+
+.step.active {
+  background-color: #318CFF;
+}
+
+.success-text-group {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.gray-bold-text {
+color: #939393;
+
+font-family: Pretendard;
+font-size: 33.64px;
+font-style: normal;
+font-weight: 800;
+line-height: 140%;
+  margin-left: -184px;
+  margin-top: 181px;
+}
+
+.black-bold-title {
+ color: #000;
+margin-top: -34px;
+font-family: Pretendard;
+font-size: 33.644px;
+font-style: normal;
+font-weight: 800;
+
+  margin-left: -54px;
+}
+
+.check-icon {
+  width: 96px;
+  height: 96px;
+  background-color: #318CFF;
+  color: white;
+  font-size: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 24px;
+}
+
+.voice-guide-box {
+  position: absolute;
+  bottom: 182px;
+  right: 38px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 15px;
+  color: #888;
+  box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+.voice-guide-box::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #f0f0f0;
+}
+
+.voice-guide-text .blue {
+  color: #318CFF;
+}
+
+.voice-button-wrapper {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 28px;
+}
+
+.bottom-row {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 312px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.next-button {
+  width: 342px;
+  height: 52px;
+  background-color: #d6e4ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.next-button.active {
+  background-color: #318CFF;
+}
+.check-icon-wrapper {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 24px;
+}
+
+.check-icon-svg {
+  width: 96px;
+  height: 96px;
+}

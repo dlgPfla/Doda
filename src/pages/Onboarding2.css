@@ -1,0 +1,141 @@
+.onboarding2-container {
+  width: 393px;
+  height: 752px;
+  margin-top: 64px;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: 'Pretendard', sans-serif;
+  position: relative;
+}
+
+.progress-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 84px;
+  justify-content: flex-start;
+}
+.step {
+  width: 78px;
+  height: 4px;
+  border-radius: 7px;
+  background: #ededed;
+}
+.step.active {
+  background-color: #318cff;
+}
+
+.text-group {
+  margin-bottom: 24px;
+}
+.caption {
+  color: #939393;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: -16px;
+}
+.title {
+  color: #000;
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  margin-top: 97px;
+}
+.onboarding2-input {
+  flex: 1;
+  padding: 16px;
+  font-size: 15px;
+  background-color: #ededed;
+  border: none;
+  border-radius: 8px;
+  width: 312px;
+}
+
+.verify-button {
+  width: 104px;
+  background-color: #d6e4ff;
+  color: white;
+  border: none;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: not-allowed;
+}
+.verify-button.active {
+  background-color: #318cff;
+  cursor: pointer;
+}
+
+.voice-guide-box {
+  position: absolute;
+  bottom: 182px;
+  right: 38px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 15px;
+  color: #888;
+  box-shadow: 0 0 2px rgba(0,0,0,0.1);
+}
+.voice-guide-box::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 20px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #f0f0f0;
+}
+.voice-guide-text .blue {
+  color: #318cff;
+}
+
+.bottom-row {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 342px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  
+}
+
+
+
+
+.next-button {
+  width: 342px;
+  height: 52px;
+  background-color: #d6e4ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.next-button.active {
+  background-color: #318cff;
+  cursor: pointer;
+}
+
+.voice-button {
+  all: unset; /* ← 기본 스타일 완전 제거 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #318cff;
+  cursor: pointer;
+}

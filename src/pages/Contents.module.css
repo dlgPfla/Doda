@@ -1,0 +1,159 @@
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin-top: 50px;
+  margin-left: 22px;
+  
+}
+
+.scrollContainer {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 370px;
+
+  /* 스크롤바 감추기 */
+  -ms-overflow-style: none;  /* IE, Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollContainer::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 24px 0 12px;
+}
+
+.new {
+  color: red;
+  margin-right: 8px;
+}
+
+.scrollWrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE, Edge */
+  padding-bottom: 8px;
+}
+
+.scrollWrapper::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari */
+}
+
+.thumbnail {
+  flex: 0 0 auto;
+  width: 154px;
+  height: 193px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.movieImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 🎵 추천 노래 해석 스타일 */
+.horizontalScrollContainer {
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.horizontalScrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.gridWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 154px);
+  grid-template-rows: repeat(2, 154px);
+  gap: 10px;
+  padding-right: 16px;
+  flex: 0 0 auto;
+  width: max-content; /* 필요: 가로 스크롤 되게! */
+}
+
+.musicCard {
+  width: 154px;
+  height: 154px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.musicImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.bookScrollContainer {
+  overflow-x: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  scrollbar-width: none;
+}
+.bookScrollContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.bookRow {
+  display: flex;
+  gap: 12px;
+  margin-left: -15px;
+}
+
+.bookCard {
+  width: 154px;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  
+}
+
+.bookImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.bottomBar {
+  position: absolute;  /* fixed ❌ → absolute ✅ */
+  bottom: 0;
+  left: -22px;
+  width: 393px;
+  height: 56px;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #eee;
+  z-index: 10;
+  margin-bottom: 100px;
+}
+
+/* 3) 내비 아이콘 */
+.navItem {
+ width: 40px;   /* 원하는 픽셀로 통일 */
+ height: 40px;  /* width와 동일하게 설정 */
+ object-fit: contain;
+ display: block; /* inline-block 대신 block */
+ /* 필요 시 margin 조정 */
+  cursor: pointer;
+}

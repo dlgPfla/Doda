@@ -1,0 +1,186 @@
+.container {
+  padding: 20px;
+  background-color: #ffffff;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.backIcon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  margin-left: -12px;
+}
+
+
+.title {
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.quizItem {
+  margin-bottom: 32px;
+}
+
+.quizTitle {
+  display: flex;
+  align-items: center;
+color: #000;
+font-family: Pretendard;
+font-size: 22.323px;
+font-style: normal;
+font-weight: 700;
+line-height: 33.236px; /* 131.25% */
+letter-spacing: -0.506px;
+  margin-bottom: 6px;
+}
+
+.ellipse {
+  width: 19px;
+  height: 19px;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+
+.quizContent {
+ 
+font-family: Pretendard;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 25.774px; /* 143.187% */
+letter-spacing: -0.393px;
+  margin-bottom: 12px;
+  color: #000;
+  width: 311px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.optionBtn {
+  width: 139px;
+  height: 48px;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+.optionBtn:last-child {
+  margin-right: 0;
+}
+
+.optionBtn img {
+  width: 24px;
+  height: 24px;
+}
+
+.selected {
+  background-color: #cbe3ff; /* 선택 시 색상 */
+}
+
+
+.answerButtonCol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.answerButton {
+  width: 139px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+
+.answerButton img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ✅ O 선택시 파란색 */
+.selectedO {
+  background-color: #419DFF;
+}
+
+/* ✅ X 선택시 빨간색 */
+.selectedX {
+  background-color: #FFB7B7;
+}
+
+
+
+.completeButton {
+  margin-top: 330px;
+  padding: 13px 0;
+  background-color: #339cff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 48px;
+  width: 312px;
+  justify-content: center;
+  margin-left: 3px;
+  
+}
+.explanationBox {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin-top: 16px;
+  margin-left: 14px;
+  margin-right: 14px;
+  width: auto;
+}
+
+.correctTitle {
+color: #419DFF;
+font-family: Pretendard;
+font-size: 16.611px;
+font-style: normal;
+font-weight: 700;
+line-height: 23.785px; /* 143.187% */
+letter-spacing: -0.362px;
+}
+
+.explanationText {
+color: #6D6D6D;
+font-family: Pretendard;
+font-size: 16.611px;
+font-style: normal;
+font-weight: 600;
+line-height: 23.785px; /* 143.187% */
+letter-spacing: -0.362px;
+}
