@@ -1,0 +1,63 @@
+.container {
+  padding: 16px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 65px;
+}
+
+.searchBar {
+  height: 36px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.scrollArea {
+  height: 100%;
+  max-height: 100vh;
+  overflow-y: auto;
+   /* ✅ 배경 줘서 영역 확인 */
+   margin-bottom: 120px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.keywordBanner {
+  background-color: #f5f7fb;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.keyword {
+  font-size: 13px;
+  background-color: #e0ecff;
+  color: #0f0f0f;
+  padding: 6px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.description {
+  font-size: 13px;
+  color: #555;
+}

@@ -17,8 +17,15 @@
   padding: 16px;
   padding-bottom: 120px; /* 하단바 높이 만큼 여유 */
   overflow-y: scroll;
-  
+  /* ✅ 스크롤바 숨기기 */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+
 }
+.contentArea::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
 
 .recommendBar {
   height: 50px;
@@ -45,7 +52,7 @@ margin-left: -19px;
 .heading {
   font-size: 20px;
   margin-bottom: 12px;
-  margin-top: 44px;
+  margin-top: 24px;
   margin-left: 8px;
 }s
 .section {
@@ -79,8 +86,8 @@ margin-left: -19px;
 .flashCard {
   position: absolute;
   top: 0; left: 0;
-  width: 100%;
-  height: 100%;
+  width: 335px;
+height: 255px;
   cursor: grab;
   z-index: 10;
 }
@@ -129,8 +136,11 @@ flex-shrink: 0;
   position: relative;
   z-index: 2;
   color: #fff;
-  font-size: 16px;
-  padding: 8px;
+  font-size: 19px;
+  padding: 10px;
+  font-style: normal;
+font-weight: 700;
+font-family: Pretendard;
   margin: 0;
 }
 
@@ -140,6 +150,7 @@ flex-shrink: 0;
   display: flex;
   gap: 8px;
   padding: 0 8px 8px;
+  margin-bottom: 12px;
 }
 
 .keyword {
@@ -153,7 +164,7 @@ flex-shrink: 0;
 .heading1 {
   font-size: 20px;
   margin-bottom: 11px;
-  margin-top: 134px;
+  margin-top: 114px;
   margin-left: 8px;
 }
 
@@ -196,7 +207,7 @@ flex-shrink: 0;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 56px;
+  height: 66px;
   background: white;
   display: flex;
   justify-content: space-around;

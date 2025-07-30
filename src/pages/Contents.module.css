@@ -138,14 +138,14 @@
   bottom: 0;
   left: -22px;
   width: 393px;
-  height: 56px;
+  height: 66px;
   background: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-top: 1px solid #eee;
   z-index: 10;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 
 /* 3) 내비 아이콘 */

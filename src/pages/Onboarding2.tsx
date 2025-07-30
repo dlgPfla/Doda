@@ -19,10 +19,10 @@ function Onboarding2() {
     }
   };
 
-  const handleNext = () => {
-    console.log('전화번호 전송 준비:', phone);
-    navigate('/onboarding3');
-  };
+const handleNext = () => {
+  if (!isNextActive) return;
+  navigate('/onboarding3', { state: { phone } }); // ✅ 전화번호만 넘기기
+};
 
   return (
     <PageContainer>

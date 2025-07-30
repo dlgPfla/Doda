@@ -1,11 +1,14 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import PageContainer from '../components/PageContainer';
 import SpeechButton from '../components/SpeechButton';
 import styles from './Onboarding31.module.css';
 
 function Onboarding3_1() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const phone = location.state?.phone;
+const password = location.state?.password;
 
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
@@ -13,9 +16,37 @@ function Onboarding3_1() {
   const [district, setDistrict] = useState('');
   const [job, setJob] = useState('');
 
-  const handleNext = () => {
-    navigate('/onboarding4');
-  };
+  const handleNext = async () => {
+  try {
+    const response = await fetch('https://winnerteam.store/api/users/signup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        phone,
+        password,
+        name,
+        age,
+        province,
+        district,
+        job,
+      }),
+    });
+
+    const result = await response.json();
+
+ if (!response.ok && result.message.includes('이미 가입된')) {
+  // 👉 로그인 시도
+}
+
+    localStorage.setItem('token', result.token);
+    localStorage.setItem('user', JSON.stringify(result));
+    navigate('/onboarding4'); // 다음 화면
+  } catch (error: any) {
+    alert(`❌ 네트워크 오류: ${error.message}`);
+  }
+};
 
   return (
     <PageContainer>

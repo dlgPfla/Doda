@@ -18,7 +18,8 @@ import Quiz from '../pages/Quiz';
 
 import QuizResult from '../pages/QuizResult';
 import Contentsdt from '../pages/Contentsdt';
-
+import WelfarePage from '../pages/WelfarePage';
+import WelfareDetailPage from '../pages/WelfareDetailPage';
 function AppRouter() {
   return (
     <Routes>
@@ -39,7 +40,8 @@ function AppRouter() {
 <Route path="/Quiz" element={<Quiz />} />
 <Route path="/QuizResult" element={<QuizResult />} />
 <Route path="/Contentsdt" element={<Contentsdt />} />
-
+<Route path="/WelfarePage" element={<WelfarePage />} />
+<Route path="/welfare/:title" element={<WelfareDetailPage />} />
     </Routes>
   );
 }

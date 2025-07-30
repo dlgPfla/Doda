@@ -49,9 +49,9 @@ function LoginPage() {
           <h1 className="title">도다 DODA</h1>
         </div>
 
-        <div className="circle">
-          <p className="circle-text">로고</p>
-        </div>
+<div className="logo-image1">
+  <img src="/logo.jpg" alt="도다 로고" />
+</div>
 
         <div className="voice-box">
           <div className="voice-guide">

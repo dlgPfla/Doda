@@ -12,6 +12,18 @@ const dummyData = [
     keywords: ['#트럼프', '#시진핑', '#회담', '#가짜뉴스'],
     imageUrl: '/trump.svg',
   },
+  {
+  id: 1,
+    title: '인도, 미국이랑 무역 약속 기대',
+    keywords: ['#인도', '#미국', '#관세', '#무역합의'],
+    imageUrl: '/indo.svg',
+  },
+    {
+  id: 2,
+    title: '중국, 드론 쏘는 전투복 공개',
+    keywords: ['#드론', '#기술', '#중국', '#전투슈트'],
+    imageUrl: '/dron.svg',
+  },
   // …나머지 더미…
 ];
 
@@ -98,18 +110,28 @@ const navigate = useNavigate(); // ✅ 옮긴 위치
           </div>
 
           {/* 오늘의 콘텐츠 */}
-          <div className={styles.section2}>
-            <h2 className={styles.heading1}>
-              오늘의 <span className={styles.sectionHighlight}>콘텐츠</span>
-              <img src="/icon.png" alt="더보기" className={styles.headingIcon} />
-            </h2>
-            <img
-              src="/Frame 1410134887.svg"
-              alt="오늘의 콘텐츠 카드"
-              className={styles.cardImageSimple}
-            />
-          </div>
+     <div className={styles.section2}>
+  <h2
+    className={styles.heading1}
+    onClick={() => navigate('/Contentsdt')} // ✅ 클릭 시 이동
+    style={{ cursor: 'pointer' }} // 클릭 가능 표시
+  >
+    오늘의 <span className={styles.sectionHighlight}>콘텐츠</span>
+    <img
+      src="/icon.png"
+      alt="더보기"
+      className={styles.headingIcon}
+    />
+  </h2>
 
+  <img
+    src="/Frame 1410134887.svg"
+    alt="오늘의 콘텐츠 카드"
+    className={styles.cardImageSimple}
+    onClick={() => navigate('/Contentsdt')} // ✅ 이미지 클릭 시 이동
+    style={{ cursor: 'pointer' }}
+  />
+</div>
         </div>
 
 {/* 하단 내비게이션 (고정) */}
@@ -121,7 +143,7 @@ const navigate = useNavigate(); // ✅ 옮긴 위치
     className={styles.navItem}
     onClick={() => navigate('/News')}
   />
-  <img src="/welfare_tab.svg" alt="복지" className={styles.navItem} />
+  <img src="/welfare_tab.svg" alt="복지" className={styles.navItem} onClick={() => navigate('/WelfarePage')}/>
   <img src="/contents_tab.svg" alt="콘텐츠" className={styles.navItem} onClick={() => navigate('/Contents')}/>
   
 </div>

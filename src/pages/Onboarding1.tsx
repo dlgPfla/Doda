@@ -3,25 +3,25 @@ import { useState } from 'react';
 import PageContainer from '../components/PageContainer';
 import SpeechButton from '../components/SpeechButton';
 import './Onboarding1.css';
+import { useNavigate } from 'react-router-dom';
 
 function Onboarding1() {
   const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
-
+const navigate = useNavigate();
   const isActive = phone !== '' && password !== '';
-
+// ✅ 옮긴 위치
   const handleNext = () => {
-    if (isActive) {
-      alert('다음 페이지로 이동!');
-      // 예: navigate('/onboarding4')
-    }
-  };
+  navigate('/House');
+};
 
   return (
     <PageContainer>
       <div className="onboarding1-container">
         <div className="top-section">
-          <div className="circle-logo">로고</div>
+          <div className="circle-logo">
+  <img src="/logo.jpg" alt="로고" className="logo-image" />
+</div>
           <h1 className="onboarding1-title">로그인</h1>
 
           <input
