@@ -51,6 +51,7 @@ API 기반 복지 리스트 호출 및 검색
 
 
 📂 파일 구조 (src 중심)
+```
 src
  ┣ components/          # 재사용 가능한 공용 컴포넌트 (버튼, 컨테이너 등)
  ┣ pages/
@@ -63,6 +64,8 @@ src
  ┣ styles/              # CSS Module 파일
  ┣ App.tsx              # 라우팅 및 전체 앱 구조
  ┗ main.tsx             # 진입 파일
+```
+
 
 🌐 배포
 
